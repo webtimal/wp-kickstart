@@ -22,7 +22,6 @@
   "author": "Dominik Büchler <dominik.buechler@webtimal.ch>",
   "license": "ISC",
   "dependencies": {
-    "parse-json": "^5.0.0",
-    "path": "^0.12.7"
+    "parse-json": "^5.0.0"
   }
 }

@@ -3,7 +3,6 @@ const { execSync } = require('child_process')
 
 // Dependency modules
 const fs        = require('fs')
-const path      = require('path')
 const parseJson = require('parse-json')
 
 // Local modules
@@ -12,14 +11,11 @@ const cmdr = require('./cmdr.js')
 // Fetch arguments
 const args = process.argv.splice(2)
 
-// Build path to the config file
-const jsonFile = path.join(args[0], 'wp-kickstart.json')
-
-// Navigate to the root diretory
+// Set the current working directory
 process.chdir(args[0])
 
 // Read the config file
-fs.readFile(jsonFile, (error, buffer) =>
+fs.readFile('wp-kickstart.json', (error, buffer) =>
 {
     // Parse json content
     const config = parseJson(buffer)
