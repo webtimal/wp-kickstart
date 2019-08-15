@@ -17,7 +17,6 @@
     "configs": {
         "FS_METHOD": "direct"
     },
-    "users": [],
     "components": {
         "themes": {
             "twentynineteen": true
@@ -27,14 +26,13 @@
         }
     },
     "cleanup": {
-        "this": true,
-        "plugins": [
-            "hello",
-            "akismet"
-        ],
         "themes": [
             "twentysixteen",
             "twentyseventeen"
+        ],
+        "plugins": [
+            "hello",
+            "akismet"
         ]
     }
 }
