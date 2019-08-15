@@ -12,7 +12,7 @@ Upon installation, the most recent version of [WP-CLI](https://wp-cli.org) will 
 ## Usage
 
 To run a WordPress installation, create a new folder to serve as the root directory. Now place a copy of the **wp-kickstart.json** configuration file inside it. Adjust it to your needs (see the section below for more information) and simply run the following command in your terminal passing the path to the directory.
-`wp-kickstart dir/subdir/root`
+`node wp-kickstart dir/subdir/root`
 
 **IMPORTANT: Delete or move the wp-kickstart.json file after installation as it holds sensitive information and is not protected from being accessed!**
 
