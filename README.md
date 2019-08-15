@@ -9,7 +9,6 @@ This package is meant to be used globally, therefore install it with the appropr
 
 Upon installation, the most recent version of [WP-CLI](https://wp-cli.org) will automatically be downloaded and stored as */usr/local/bin/wp*.
 
-
 ## Usage
 
 To run a WordPress installation, create a new folder to serve as the root directory. Now place a copy of the **wp-kickstart.json** configuration file inside it. Adjust it to your needs (see the section below for more information) and simply run the following command in your terminal passing the path to the directory.
@@ -20,7 +19,8 @@ To run a WordPress installation, create a new folder to serve as the root direct
 ### wp-kickstart.json
 
 This file is holding all the information necessary to install WordPress and adjust it to your needs. Below is an example of this file containing most of the currently available options:
-```{
+```
+{
     "init": {
         "url": "http://localhost/wordpress",
         "title": "WordPress",
@@ -39,7 +39,6 @@ This file is holding all the information necessary to install WordPress and adju
     "configs": {
         "FS_METHOD": "direct"
     },
-    "users": [],
     "components": {
         "themes": {
             "twentynineteen": true
@@ -49,14 +48,13 @@ This file is holding all the information necessary to install WordPress and adju
         }
     },
     "cleanup": {
-        "this": true,
-        "plugins": [
-            "hello",
-            "akismet"
-        ],
         "themes": [
             "twentysixteen",
             "twentyseventeen"
+        ],
+        "plugins": [
+            "hello",
+            "akismet"
         ]
     }
 }
