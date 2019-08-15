@@ -16,7 +16,7 @@ const args = process.argv.splice(2)
 const jsonFile = path.join(args[0], 'wp-kickstart.json')
 
 // Navigate to the root diretory
-execSync(`cd ${args[0]}`)
+process.chdir(args[0])
 
 // Read the config file
 fs.readFile(jsonFile, (error, buffer) =>
