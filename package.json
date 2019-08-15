@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "description": "Automates the WordPress installation process using a customizable setup file",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webtimal/wp-kickstart.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "install": "node install-wp-cli.js"
   },
   "keywords": [
+    "wp-kickstart",
     "wordpress",
     "wp",
     "install",
