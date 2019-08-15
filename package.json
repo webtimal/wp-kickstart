@@ -1,0 +1,23 @@
+{
+  "name": "wp-kickstart",
+  "version": "1.0.0",
+  "description": "Automates the WordPress installation process using a customizable setup file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node install-wp-cli.js"
+  },
+  "keywords": [
+    "wordpress",
+    "wp",
+    "install",
+    "installation",
+    "kickstart"
+  ],
+  "author": "Dominik Büchler <dominik.buechler@webtimal.ch>",
+  "license": "ISC",
+  "dependencies": {
+    "parse-json": "^5.0.0",
+    "path": "^0.12.7"
+  }
+}

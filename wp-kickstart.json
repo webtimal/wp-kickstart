@@ -1,0 +1,40 @@
+{
+    "init": {
+        "url": "http://localhost/wp-kickstart",
+        "title": "WordPress",
+        "lang": "de_DE",
+        "admin_user": "admin",
+        "admin_pass": "youshallnotpass",
+        "admin_email": "admin@domain.tld",
+        "notify": false
+    },
+    "database": {
+        "name": "wp-kickstart",
+        "host": "localhost",
+        "user": "root",
+        "pass": ""
+    },
+    "configs": {
+        "FS_METHOD": "direct"
+    },
+    "users": [],
+    "components": {
+        "themes": {
+            "twentynineteen": true
+        },
+        "plugins": {
+            "elementor": true
+        }
+    },
+    "cleanup": {
+        "this": true,
+        "plugins": [
+            "hello",
+            "akismet"
+        ],
+        "themes": [
+            "twentysixteen",
+            "twentyseventeen"
+        ]
+    }
+}
