@@ -4,7 +4,7 @@ Automates the WordPress installation process using a customizable setup file.
 
 ## Installation
 
-This package is meant to be used globally, therefore install it with the appropriate command:
+This package is meant to be installed globally, therefore install it with the appropriate flag:
 `npm i -g wp-kickstart`
 
 Upon installation, the most recent version of [WP-CLI](https://wp-cli.org) will automatically be downloaded and stored as */usr/local/bin/wp*.
@@ -12,7 +12,7 @@ Upon installation, the most recent version of [WP-CLI](https://wp-cli.org) will 
 ## Usage
 
 To run a WordPress installation, create a new folder to serve as the root directory. Now place a copy of the **wp-kickstart.json** configuration file inside it. Adjust it to your needs (see the section below for more information) and simply run the following command in your terminal (passing the path to the directory):
-`node wp-kickstart dir/subdir/root`
+`wp-kickstart dir/subdir/root`
 
 **IMPORTANT: Delete or move the wp-kickstart.json file after installation as it holds sensitive information and is not protected from being accessed!**
 
