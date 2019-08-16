@@ -125,4 +125,7 @@ function run(config)
 
         console.log(logSymbols.success, 'Plugin ' + plugin + ' deleted')
     }
+
+    // Final message
+    console.log("\n All done! :-) Access your website: " + config.init.url)
 }
