@@ -21,6 +21,9 @@
   ],
   "author": "Dominik Büchler <dominik.buechler@webtimal.ch>",
   "license": "ISC",
+  "bin": {
+    "wp-kickstart": "./index.js"
+  },
   "dependencies": {
     "log-symbols": "^3.0.0",
     "parse-json": "^5.0.0"
