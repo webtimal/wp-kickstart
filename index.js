@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // Built in imports
 const { execSync } = require('child_process')
 
