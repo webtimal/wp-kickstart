@@ -114,7 +114,7 @@ function run(config)
     {
         execSync(cmdr.build(`wp theme delete ${theme}`))
 
-        console.log(logSymbols.info, 'Theme ' + theme + ' deleted')
+        console.log(logSymbols.success, 'Theme ' + theme + ' deleted')
     }
 
 
@@ -123,6 +123,6 @@ function run(config)
     {
         execSync(cmdr.build(`wp plugin delete ${plugin}`))
 
-        console.log(logSymbols.info, 'Plugin ' + plugin + ' deleted')
+        console.log(logSymbols.success, 'Plugin ' + plugin + ' deleted')
     }
 }
