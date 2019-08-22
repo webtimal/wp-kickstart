@@ -1,6 +1,6 @@
 {
   "name": "wp-kickstart",
-  "version": "1.2.0",
+  "version": "1.0.0",
   "description": "Automates the WordPress installation process using a customizable setup file",
   "main": "index.js",
   "repository": {
