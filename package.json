@@ -1,6 +1,6 @@
 {
   "name": "wp-kickstart",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Automates the WordPress installation process using a customizable setup file",
   "main": "index.js",
   "homepage": "https://produkte.webtimal.ch/wp-kickstart/",
