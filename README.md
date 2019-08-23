@@ -15,8 +15,7 @@ MacOS / Linux | /usr/local/bin
 Windows | %AppData%/Roaming/wp-cli
 
 If you are installing the package in Windows, make sure the following paths are added to the PATH environment variable:
-`%AppData%\wp-cli`
-`%AppData%\npm`
+`%AppData%\wp-cli` and `%AppData%\npm`
 
 Also the following commands need to be accessible via CLI: *php*, *mysql*
 
