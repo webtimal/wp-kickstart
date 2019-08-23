@@ -10,7 +10,7 @@ let path, file
 switch(process.platform)
 {
    case 'win32':
-      path = process.env.APPDATA + '/wp-cli'
+      path = process.env.APPDATA + '\\wp-cli'
       file = 'wp.bat'
       break;
    default:
@@ -32,10 +32,10 @@ else
 
             execSync(`if not exist ${path} mkdir "${path}"`)
             execSync(`move wp-cli.phar ${path}`)
-            execSync(`type nul > ${path}/wp.bat`)
-            execSync(`echo @ECHO OFF >> ${path}/wp.bat`)
-            execSync(`echo. >> ${path}/wp.bat`)
-            execSync(`echo php wp-cli.phar >> ${path}/wp.bat`)
+            execSync(`type nul > ${path}\\wp.bat`)
+            execSync(`echo @ECHO OFF >> ${path}\\wp.bat`)
+            execSync(`echo. >> ${path}\\wp.bat`)
+            execSync(`echo php ${path}\\wp-cli.phar %* >> ${path}\\wp.bat`)
             execSync(`setx path "%path%;${path}"`)
             break;
          default:

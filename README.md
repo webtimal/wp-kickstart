@@ -14,6 +14,10 @@ OS | Location
 MacOS / Linux | /usr/local/bin
 Windows | %AppData%/Roaming/wp-cli
 
+If you are installing the package in Windows, make sure the following paths are added to the PATH environment variable:
+`%AppData%\wp-cli`
+`%AppData%\npm`
+
 ## Usage
 
 To run a WordPress installation, create a new folder to serve as the root directory. Place a copy of the **wp-kickstart.json** configuration file inside it and adjust it to your needs (see the section below for more information). Finally run the following command in your terminal (passing the path to the directory):
